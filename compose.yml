@@ -1,1 +1,16 @@
-Update this file to add the content
+version: '3.8'
+
+services:
+  rakesh:
+    image: rakesh759/22it036-personal-api:latest
+    container_name: rakesh-api-container
+    ports:
+      - "5005:5000"  
+    restart: always
+
+  daraneesh:
+    image: dharaneesh1318/personal-api:latest
+    container_name: dharaneesh-container
+    ports:
+      - "5000:5000"  
+    restart: always
